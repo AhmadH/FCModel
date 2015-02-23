@@ -9,7 +9,7 @@
 import Foundation
 
 @objc(Person)
-public class Person : FCModel {
+class Person : FCModel {
     // database columns:
     var id : UInt64 = 0
     var name : String = ""
@@ -29,7 +29,7 @@ public class Person : FCModel {
         }
     }
     
-    public override func save() -> Bool {
+    override func save() -> Bool {
         if (self.hasUnsavedChanges) {
             self.modifiedTime = NSDate()
         }
