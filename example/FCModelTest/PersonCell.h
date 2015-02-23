@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Person.h"
+#import "FCModelTest-Swift.h"
 
 @interface PersonCell : UICollectionViewCell
 

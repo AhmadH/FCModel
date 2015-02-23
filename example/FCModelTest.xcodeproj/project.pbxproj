@@ -34,7 +34,6 @@
 		A9EEFB1617E4CFD40066C5EA /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EEFB1517E4CFD40066C5EA /* PersonCell.xib */; };
 		A9EEFB1917E4D0010066C5EA /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFB1817E4D0010066C5EA /* PersonCell.m */; };
 		A9EEFB1B17E4D2830066C5EA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EEFB1A17E4D2830066C5EA /* libsqlite3.dylib */; };
-		A9EEFB1E17E4DCC00066C5EA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFB1D17E4DCC00066C5EA /* Person.m */; };
 		A9EEFB2117E4E39A0066C5EA /* RandomThings.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFB2017E4E39A0066C5EA /* RandomThings.m */; };
 		A9EEFB2317E4E4950066C5EA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EEFB2217E4E4950066C5EA /* Security.framework */; };
 		A9EEFB2517E5F5060066C5EA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9EEFB2417E5F5060066C5EA /* Default-568h@2x.png */; };
@@ -42,6 +41,7 @@
 		A9EEFB2C17E6BCF80066C5EA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFB2B17E6BCF80066C5EA /* FMDatabasePool.m */; };
 		EE9BDA0B1A9BB7A000EB7E6E /* FCModelConcurrentMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA0A1A9BB7A000EB7E6E /* FCModelConcurrentMutableDictionary.m */; };
 		EE9BDA0E1A9BB7B300EB7E6E /* FCModelNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA0D1A9BB7B300EB7E6E /* FCModelNotificationCenter.m */; };
+		EE9BDA131A9BD92A00EB7E6E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA121A9BD92A00EB7E6E /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,8 +98,6 @@
 		A9EEFB1717E4D0010066C5EA /* PersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
 		A9EEFB1817E4D0010066C5EA /* PersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
 		A9EEFB1A17E4D2830066C5EA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		A9EEFB1C17E4DCC00066C5EA /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		A9EEFB1D17E4DCC00066C5EA /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A9EEFB1F17E4E39A0066C5EA /* RandomThings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomThings.h; sourceTree = "<group>"; };
 		A9EEFB2017E4E39A0066C5EA /* RandomThings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomThings.m; sourceTree = "<group>"; };
 		A9EEFB2217E4E4950066C5EA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -113,6 +111,7 @@
 		EE9BDA0C1A9BB7B300EB7E6E /* FCModelNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCModelNotificationCenter.h; sourceTree = "<group>"; };
 		EE9BDA0D1A9BB7B300EB7E6E /* FCModelNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCModelNotificationCenter.m; sourceTree = "<group>"; };
 		EE9BDA0F1A9BD84A00EB7E6E /* FCModelTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCModelTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE9BDA121A9BD92A00EB7E6E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,11 +269,10 @@
 		A9EEFB2917E6B94F0066C5EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A9EEFB1C17E4DCC00066C5EA /* Person.h */,
-				A9EEFB1D17E4DCC00066C5EA /* Person.m */,
 				A9EEFB2617E6AF970066C5EA /* Color.h */,
 				A9EEFB2717E6AF970066C5EA /* Color.m */,
 				EE9BDA0F1A9BD84A00EB7E6E /* FCModelTest-Bridging-Header.h */,
+				EE9BDA121A9BD92A00EB7E6E /* Person.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -401,7 +399,7 @@
 				A9EEFAFF17E4CB300066C5EA /* FCModel.m in Sources */,
 				A9EEFB1917E4D0010066C5EA /* PersonCell.m in Sources */,
 				A99B9B2218B316DC00D79C6A /* FMDatabaseAdditions.m in Sources */,
-				A9EEFB1E17E4DCC00066C5EA /* Person.m in Sources */,
+				EE9BDA131A9BD92A00EB7E6E /* Person.swift in Sources */,
 				A9EEFB1217E4CB870066C5EA /* FMResultSet.m in Sources */,
 				A9EEFACF17E4C8EE0066C5EA /* main.m in Sources */,
 				A9EEFB1017E4CB870066C5EA /* FMDatabaseQueue.m in Sources */,

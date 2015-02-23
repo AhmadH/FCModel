@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "FCModel.h"
-#import "Person.h"
+#import "FCModelTest-Swift.h"
 #import "RandomThings.h"
 
 @implementation AppDelegate

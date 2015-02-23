@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "PersonCell.h"
-#import "Person.h"
+#import "FCModelTest-Swift.h"
 
 @interface ViewController ()
 @property (nonatomic, copy) NSArray *people;
