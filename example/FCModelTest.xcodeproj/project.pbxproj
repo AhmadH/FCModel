@@ -225,6 +225,7 @@
 				A9EEFACB17E4C8EE0066C5EA /* InfoPlist.strings */,
 				A9EEFACE17E4C8EE0066C5EA /* main.m */,
 				A9EEFAD017E4C8EE0066C5EA /* FCModelTest-Prefix.pch */,
+				EE9BDA0F1A9BD84A00EB7E6E /* FCModelTest-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,7 +272,6 @@
 			children = (
 				A9EEFB2617E6AF970066C5EA /* Color.h */,
 				A9EEFB2717E6AF970066C5EA /* Color.m */,
-				EE9BDA0F1A9BD84A00EB7E6E /* FCModelTest-Bridging-Header.h */,
 				EE9BDA121A9BD92A00EB7E6E /* Person.swift */,
 			);
 			name = Models;
