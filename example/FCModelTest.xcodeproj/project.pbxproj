@@ -112,6 +112,7 @@
 		EE9BDA0A1A9BB7A000EB7E6E /* FCModelConcurrentMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCModelConcurrentMutableDictionary.m; sourceTree = "<group>"; };
 		EE9BDA0C1A9BB7B300EB7E6E /* FCModelNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCModelNotificationCenter.h; sourceTree = "<group>"; };
 		EE9BDA0D1A9BB7B300EB7E6E /* FCModelNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCModelNotificationCenter.m; sourceTree = "<group>"; };
+		EE9BDA0F1A9BD84A00EB7E6E /* FCModelTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCModelTest-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +274,7 @@
 				A9EEFB1D17E4DCC00066C5EA /* Person.m */,
 				A9EEFB2617E6AF970066C5EA /* Color.h */,
 				A9EEFB2717E6AF970066C5EA /* Color.m */,
+				EE9BDA0F1A9BD84A00EB7E6E /* FCModelTest-Bridging-Header.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -563,6 +565,7 @@
 				INFOPLIST_FILE = "FCModelTest/FCModelTest-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FCModelTest/FCModelTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
@@ -579,6 +582,7 @@
 				INFOPLIST_FILE = "FCModelTest/FCModelTest-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FCModelTest/FCModelTest-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
