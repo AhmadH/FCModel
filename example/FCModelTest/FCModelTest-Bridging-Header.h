@@ -4,3 +4,4 @@
 
 #import <UIKit/UIKit.h>
 #import "FCModel.h"
+#import "PersonCell.h"

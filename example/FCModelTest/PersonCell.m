@@ -7,7 +7,7 @@
 //
 
 #import "PersonCell.h"
-
+#import "FCModelTest-Swift.h"
 
 @interface PersonCell ()
 @property (nonatomic) Person *person;

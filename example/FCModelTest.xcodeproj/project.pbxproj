@@ -25,7 +25,6 @@
 		A9EEFACD17E4C8EE0066C5EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9EEFACB17E4C8EE0066C5EA /* InfoPlist.strings */; };
 		A9EEFACF17E4C8EE0066C5EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFACE17E4C8EE0066C5EA /* main.m */; };
 		A9EEFAD317E4C8EE0066C5EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFAD217E4C8EE0066C5EA /* AppDelegate.m */; };
-		A9EEFADC17E4C8EE0066C5EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFADB17E4C8EE0066C5EA /* ViewController.m */; };
 		A9EEFAFF17E4CB300066C5EA /* FCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFAFC17E4CB300066C5EA /* FCModel.m */; };
 		A9EEFB0D17E4CB870066C5EA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFB0317E4CB870066C5EA /* FMDatabase.m */; };
 		A9EEFB1017E4CB870066C5EA /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFB0917E4CB870066C5EA /* FMDatabaseQueue.m */; };
@@ -42,6 +41,7 @@
 		EE9BDA0E1A9BB7B300EB7E6E /* FCModelNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA0D1A9BB7B300EB7E6E /* FCModelNotificationCenter.m */; };
 		EE9BDA131A9BD92A00EB7E6E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA121A9BD92A00EB7E6E /* Person.swift */; };
 		EE9BDA151A9BF38800EB7E6E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA141A9BF38800EB7E6E /* Color.swift */; };
+		EE9BDA171A9BFBFE00EB7E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA161A9BFBFE00EB7E6E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,8 +83,6 @@
 		A9EEFAD017E4C8EE0066C5EA /* FCModelTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCModelTest-Prefix.pch"; sourceTree = "<group>"; };
 		A9EEFAD117E4C8EE0066C5EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9EEFAD217E4C8EE0066C5EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A9EEFADA17E4C8EE0066C5EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A9EEFADB17E4C8EE0066C5EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A9EEFAFB17E4CB300066C5EA /* FCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCModel.h; sourceTree = "<group>"; };
 		A9EEFAFC17E4CB300066C5EA /* FCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCModel.m; sourceTree = "<group>"; };
 		A9EEFB0217E4CB870066C5EA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -111,6 +109,7 @@
 		EE9BDA0F1A9BD84A00EB7E6E /* FCModelTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCModelTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		EE9BDA121A9BD92A00EB7E6E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		EE9BDA141A9BF38800EB7E6E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		EE9BDA161A9BFBFE00EB7E6E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +201,7 @@
 				A9EEFAFA17E4CB300066C5EA /* FCModel */,
 				A9EEFAD117E4C8EE0066C5EA /* AppDelegate.h */,
 				A9EEFAD217E4C8EE0066C5EA /* AppDelegate.m */,
-				A9EEFADA17E4C8EE0066C5EA /* ViewController.h */,
-				A9EEFADB17E4C8EE0066C5EA /* ViewController.m */,
+				EE9BDA161A9BFBFE00EB7E6E /* ViewController.swift */,
 				A9EEFB1317E4CBB70066C5EA /* ViewController.xib */,
 				A9EEFB1717E4D0010066C5EA /* PersonCell.h */,
 				A9EEFB1817E4D0010066C5EA /* PersonCell.m */,
@@ -384,13 +382,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9BDA0B1A9BB7A000EB7E6E /* FCModelConcurrentMutableDictionary.m in Sources */,
+				EE9BDA171A9BFBFE00EB7E6E /* ViewController.swift in Sources */,
 				A9EEFB2C17E6BCF80066C5EA /* FMDatabasePool.m in Sources */,
 				A9EEFB2117E4E39A0066C5EA /* RandomThings.m in Sources */,
 				A924EA3118D0EC94000C28BD /* FCModelCachedObject.m in Sources */,
 				A9B741F91A36480600CF42CE /* FCModelInstanceCache.m in Sources */,
 				EE9BDA0E1A9BB7B300EB7E6E /* FCModelNotificationCenter.m in Sources */,
 				A924EA3218D0EC94000C28BD /* FCModelDatabaseQueue.m in Sources */,
-				A9EEFADC17E4C8EE0066C5EA /* ViewController.m in Sources */,
 				A9EEFAD317E4C8EE0066C5EA /* AppDelegate.m in Sources */,
 				A9EEFB0D17E4CB870066C5EA /* FMDatabase.m in Sources */,
 				EE9BDA151A9BF38800EB7E6E /* Color.swift in Sources */,
