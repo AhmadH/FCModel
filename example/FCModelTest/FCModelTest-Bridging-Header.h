@@ -4,4 +4,3 @@
 
 #import <UIKit/UIKit.h>
 #import "FCModel.h"
-#import "Color.h"
