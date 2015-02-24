@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "FCModel.h"
 #import "FCModelTest-Swift.h"
-#import "RandomThings.h"
 
 @implementation AppDelegate
 
