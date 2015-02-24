@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "FCModel.h"
 #import "FCModelTest-Swift.h"
 #import "RandomThings.h"

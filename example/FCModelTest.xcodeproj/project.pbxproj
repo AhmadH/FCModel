@@ -31,7 +31,6 @@
 		A9EEFB1217E4CB870066C5EA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFB0C17E4CB870066C5EA /* FMResultSet.m */; };
 		A9EEFB1417E4CBB80066C5EA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EEFB1317E4CBB70066C5EA /* ViewController.xib */; };
 		A9EEFB1617E4CFD40066C5EA /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EEFB1517E4CFD40066C5EA /* PersonCell.xib */; };
-		A9EEFB1917E4D0010066C5EA /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFB1817E4D0010066C5EA /* PersonCell.m */; };
 		A9EEFB1B17E4D2830066C5EA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EEFB1A17E4D2830066C5EA /* libsqlite3.dylib */; };
 		A9EEFB2117E4E39A0066C5EA /* RandomThings.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EEFB2017E4E39A0066C5EA /* RandomThings.m */; };
 		A9EEFB2317E4E4950066C5EA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EEFB2217E4E4950066C5EA /* Security.framework */; };
@@ -42,6 +41,7 @@
 		EE9BDA131A9BD92A00EB7E6E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA121A9BD92A00EB7E6E /* Person.swift */; };
 		EE9BDA151A9BF38800EB7E6E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA141A9BF38800EB7E6E /* Color.swift */; };
 		EE9BDA171A9BFBFE00EB7E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA161A9BFBFE00EB7E6E /* ViewController.swift */; };
+		EE9BDA191A9C0CC300EB7E6E /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BDA181A9C0CC300EB7E6E /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +93,6 @@
 		A9EEFB0C17E4CB870066C5EA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		A9EEFB1317E4CBB70066C5EA /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		A9EEFB1517E4CFD40066C5EA /* PersonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
-		A9EEFB1717E4D0010066C5EA /* PersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
-		A9EEFB1817E4D0010066C5EA /* PersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
 		A9EEFB1A17E4D2830066C5EA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		A9EEFB1F17E4E39A0066C5EA /* RandomThings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomThings.h; sourceTree = "<group>"; };
 		A9EEFB2017E4E39A0066C5EA /* RandomThings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomThings.m; sourceTree = "<group>"; };
@@ -110,6 +108,7 @@
 		EE9BDA121A9BD92A00EB7E6E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		EE9BDA141A9BF38800EB7E6E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EE9BDA161A9BFBFE00EB7E6E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE9BDA181A9C0CC300EB7E6E /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,8 +202,7 @@
 				A9EEFAD217E4C8EE0066C5EA /* AppDelegate.m */,
 				EE9BDA161A9BFBFE00EB7E6E /* ViewController.swift */,
 				A9EEFB1317E4CBB70066C5EA /* ViewController.xib */,
-				A9EEFB1717E4D0010066C5EA /* PersonCell.h */,
-				A9EEFB1817E4D0010066C5EA /* PersonCell.m */,
+				EE9BDA181A9C0CC300EB7E6E /* PersonCell.swift */,
 				A9EEFB1517E4CFD40066C5EA /* PersonCell.xib */,
 				A9EEFB1F17E4E39A0066C5EA /* RandomThings.h */,
 				A9EEFB2017E4E39A0066C5EA /* RandomThings.m */,
@@ -383,6 +381,7 @@
 			files = (
 				EE9BDA0B1A9BB7A000EB7E6E /* FCModelConcurrentMutableDictionary.m in Sources */,
 				EE9BDA171A9BFBFE00EB7E6E /* ViewController.swift in Sources */,
+				EE9BDA191A9C0CC300EB7E6E /* PersonCell.swift in Sources */,
 				A9EEFB2C17E6BCF80066C5EA /* FMDatabasePool.m in Sources */,
 				A9EEFB2117E4E39A0066C5EA /* RandomThings.m in Sources */,
 				A924EA3118D0EC94000C28BD /* FCModelCachedObject.m in Sources */,
@@ -393,7 +392,6 @@
 				A9EEFB0D17E4CB870066C5EA /* FMDatabase.m in Sources */,
 				EE9BDA151A9BF38800EB7E6E /* Color.swift in Sources */,
 				A9EEFAFF17E4CB300066C5EA /* FCModel.m in Sources */,
-				A9EEFB1917E4D0010066C5EA /* PersonCell.m in Sources */,
 				A99B9B2218B316DC00D79C6A /* FMDatabaseAdditions.m in Sources */,
 				EE9BDA131A9BD92A00EB7E6E /* Person.swift in Sources */,
 				A9EEFB1217E4CB870066C5EA /* FMResultSet.m in Sources */,
