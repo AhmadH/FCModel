@@ -17,8 +17,8 @@ func UIColorFromHex(rgbValue : UInt32) -> UIColor {
 
 @objc(Color)
 class Color : FCModel {
-    var name : String = "" // database primary key (doesn't have to be an integer)
-    var hex : String = "" // database column
+    var name = "" // database primary key (doesn't have to be an integer)
+    var hex = "" // database column
     
     // not a database column
     var colorValue : UIColor {

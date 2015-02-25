@@ -12,9 +12,9 @@ import Foundation
 class Person : FCModel {
     // database columns:
     var id : UInt64 = 0
-    var name : String = ""
-    var colorName : String = ""
-    var taps : Int = 0
+    var name = ""
+    var colorName = ""
+    var taps = 0
     var createdTime : NSDate?
     var modifiedTime : NSDate?
     
@@ -23,7 +23,6 @@ class Person : FCModel {
         get {
             return Color.instanceWithPrimaryKey(self.colorName)
         }
-        
         set {
             self.colorName = newValue.name
         }

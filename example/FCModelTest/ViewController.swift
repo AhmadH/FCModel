@@ -33,7 +33,7 @@ class ViewController : UIViewController, UICollectionViewDataSource, UICollectio
     
     func reloadPeople(notification : NSNotification?) {
         self.people = Person.allInstances()
-        NSLog("Reloading with %lu people", self.people.count)
+        NSLog("Reloading with \(self.people.count) people")
         self.collectionView?.reloadData()
     }
     

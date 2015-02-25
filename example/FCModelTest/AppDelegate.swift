@@ -11,7 +11,7 @@ import Foundation
 @UIApplicationMain
 class AppDelegate : UIResponder, UIApplicationDelegate {
     var window : UIWindow?
-    var cachedColors : [Color]?
+    var cachedColors = [Color]()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         // Test closing before anything has been opened, shouldn't crash or do anything weird (#79)
@@ -23,14 +23,13 @@ class AppDelegate : UIResponder, UIApplicationDelegate {
         // New DB on every launch for testing (comment out for persistence testing)
         NSFileManager.defaultManager().removeItemAtPath(dbPath, error: nil)
         FCModel.openDatabaseAtPath(dbPath, withDatabaseInitializer:nil, schemaBuilder:{
-            (db : FMDatabase!, schemaVersion : UnsafeMutablePointer<Int32>) -> Void in
+            (db : FMDatabase!, schemaVersion : UnsafeMutablePointer<Int32>) in
             
             db.crashOnErrors = true
 //          db.traceExecution = true // Log every query (useful to learn what FCModel is doing or analyze performance)
             db.beginTransaction()
             
-            let failedAt = {
-                (statement : Int) -> Void in
+            func failedAt(statement : Int) {
                 let lastErrorCode = db.lastErrorCode()
                 let lastErrorMessage = db.lastErrorMessage()
                 db.rollback()
@@ -84,9 +83,9 @@ class AppDelegate : UIResponder, UIApplicationDelegate {
         })
         
         FCModel.inDatabaseSync({
-            (db : FMDatabase!) -> Void in
+            (db : FMDatabase!) in
             FCModel.inDatabaseSync({
-                (db : FMDatabase!) -> Void in
+                (db : FMDatabase!) in
             
             })
         })
@@ -95,7 +94,8 @@ class AppDelegate : UIResponder, UIApplicationDelegate {
         let testUniqueRed0 = Color.instanceWithPrimaryKey("red")
         
         // Prepopulate the Color table
-        for (name, hex) in ["red" : "FF3838",
+        let colorNameHexDict = [
+            "red" : "FF3838",
             "orange" : "FF9335",
             "yellow" : "FFC947",
             "green" : "44D875",
@@ -104,8 +104,9 @@ class AppDelegate : UIResponder, UIApplicationDelegate {
             "purple" : "5959CE",
             "pink" : "FF2B56",
             "gray1" : "8E8E93",
-            "gray2" : "C6C6CC",]
-        {
+            "gray2" : "C6C6CC"
+        ]
+        for (name, hex) in colorNameHexDict {
             var c = Color.instanceWithPrimaryKey(name)
             c.hex = hex
             c.save()
